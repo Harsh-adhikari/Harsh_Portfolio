@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Adhikari - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#">
+                        <h1><span>Port</span>folio <span>Website</span></h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamb">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#one" data-after="Home">Home</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#skill-section" data-after="Skills">Skills</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="one">
+        <div class="one container">
+            <div class="hero-content">
+                <h1 class="one-text">Hello, My Name Is <span></span></h1>
+                <h1 class="one-text">Harsh Adhikari <span></span></h1>
+                <h1 class="one-text">Web Developer <span></span></h1>
+                <a href="https://forms.gle/RtCLxtBe4kEiKJXt5" type="button" class="cta">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./img/profile-pic2.jpg" alt="Profile Image" class="profile-img">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">PROJ <span>ECTS</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Amazon Front Page Clone</h1>
+                        <h2>(Frontend Related)</h2>
+                        <p>Recreated Amazon's front page using only HTML and CSS, showcasing attention to detail and a strong grasp of responsive design. This static clone reflects the real website's layout and styling, capturing its professional appearance while improving my understanding of web structure and styling techniques.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/amazon.png" alt="Amazon Clone Project">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Job Application Form</h1>
+                        <h2>(Using SQL)</h2>
+                        <p>Developed a fully functional job application form where users can fill in their details and apply for jobs. Built with HTML, CSS, and SQL, the form collects and stores data in a database securely. This project demonstrates backend connectivity and practical form handling for real-world applications.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/job-application.png" alt="Job Application Form Project">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Image Slider</h1>
+                        <h2>(Using Javascript Concept)</h2>
+                        <p>Designed a dynamic movie slider using HTML, CSS, and JavaScript. Each movie displays key details, and a "Show More" button reveals additional information. This project highlights interactive elements, user-friendly design, and clean functionality, offering an engaging way to explore movie collections.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/slider.png" alt="Image Slider Project">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Image Search Webpage</h1>
+                        <h2>(Using API)</h2>
+                        <p>Built an intuitive image search webpage using HTML, CSS, and JavaScript, powered by the Unsplash API. Users can search for any term and get a gallery of relevant images. The project combines creativity, API integration, and clean design, making it a practical and interactive tool.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/image-search.png" alt="Image Search Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="./img/my-img.jpg" alt="About Me Image">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>me</span></h1>
+                <h2>Who is Harsh?</h2>
+                <p>I am a passionate web developer who enjoys creating clean, responsive, and user-friendly websites. I thrive on bringing both the technical and visual aspects of digital products to life, ensuring they are functional, visually appealing, and aligned with project requirements. Continuously learning, exploring, and improving, I find joy in solving problems, enhancing user experiences, and thinking about how to make things better. My work is driven by creativity and a desire to craft effective, modern web solutions that truly make an impact.</p>
+                <a href="https://drive.google.com/file/d/12in3gLQagy-9Rfjp6RQfKxMyTXpwaxkb/view?usp=sharing" class="cta">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skill-section">
+        <div class="skills-container container">
+            <h2 class="skills-title">SKILLS & TOOLS</h2>
+            <h3 class="skills-subtitle">
+                <span class="text-black">My Toolbox</span>
+                <span class="text-white">&</span>
+                <span class="text-orange">Things I Can Do</span>
+            </h3>
+            <p class="skills-description">The skills, tools and technologies I use to bring your products to life:</p>
+
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h4 class="skills-heading">Programming Languages & Technologies</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item" onclick="handleClick('HTML')">
+                            <img src="./img/html.png" alt="HTML">
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('CSS')">
+                            <img src="./img/css.png" alt="CSS">
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('JavaScript')">
+                            <img src="./img/js2.png" alt="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('React')">
+                            <img src="./img/react.png" alt="React">
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Node.js')">
+                            <img src="./img/nodejs.webp" alt="Node.js">
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Express')">
+                            <img src="./img/express.png" alt="Express">
+                            <span class="skill-name">Express</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('SQL')">
+                            <img src="./img/sql.png" alt="SQL">
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('C')">
+                            <img src="./img/c.png" alt="C">
+                            <span class="skill-name">C</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('C++')">
+                            <img src="./img/c++.png" alt="C++">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Python')">
+                            <img src="./img/python.png" alt="Python">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Java')">
+                            <img src="./img/java.png" alt="Java">
+                            <span class="skill-name">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4 class="skills-heading">Tools & Platforms</h4>
+                    <div class="skills-grid tools">
+                        <div class="skill-item" onclick="handleClick('VS Code')">
+                            <img src="./img/vscode.png" alt="VS Code">
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Jupyter')">
+                            <img src="./img/jupyter.jpg" alt="Jupyter">
+                            <span class="skill-name">Jupyter</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('GitHub')">
+                            <img src="./img/github.png" alt="GitHub">
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Git')">
+                            <img src="./img/git.png" alt="Git">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Command Line')">
+                            <img src="./img/cmd.jpg" alt="Command Line">
+                            <span class="skill-name">CMD Line</span>
+                        </div>
+                        <div class="skill-item" onclick="handleClick('Cisco')">
+                            <img src="./img/cisco.png" alt="Cisco">
+                            <span class="skill-name">Cisco</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="./img/gmail.png" alt="Email Icon"></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>harshadhikari1001@gmail.com</h2>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon"><img src="./img/phone.png" alt="Phone Icon"></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+91 6375951173</h2>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon"><img src="./img/location.png" alt="Location Icon"></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>Jaipur, Rajasthan (India)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>Social</span>&nbsp;Accounts<span></span></h1>
+            </div>
+
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://github.com/Harsh-adhikari" target="_blank"><img src="./img/github-logo.png" alt="GitHub Icon"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/harsh-adhikari1001" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn Icon"></a>
+                </div>
+            </div>
+            <h2>Feeling social? Find me on these online spaces too!</h2>
+            <p>© 2023 - 2025 | Designed & coded by Harsh Adhikari</p>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
